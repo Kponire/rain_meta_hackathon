@@ -14,13 +14,9 @@ langchain
 langchain-core
 langchain-groq
 langchain-community
-langchain-huggingface
-langchain-openai
 
 # LLM Providers
 groq
-openai
-huggingface-hub
 
 # PDF Processing
 pypdf
