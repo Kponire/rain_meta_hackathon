@@ -22,14 +22,9 @@ pypdf
 PyPDF2
 black
 pdf2image
-Pillow
-pytesseract
 
 # Video Processing
-yt-dlp
 moviepy
-SpeechRecognition
-pydub
 
 # Utilities
 python-jose[cryptography]
