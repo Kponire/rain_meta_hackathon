@@ -30,8 +30,8 @@ SpeechRecognition
 
 # Utilities
 python-jose[cryptography]
+bcrypt==4.0.1
 passlib[bcrypt]
-bcrypt
 python-magic
 wikipedia-api
 requests
