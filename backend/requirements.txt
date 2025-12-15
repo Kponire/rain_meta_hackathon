@@ -1,6 +1,5 @@
 # FastAPI & Web
 fastapi[standard]
-uvicorn[standard]
 python-multipart
 
 # Database
@@ -32,9 +31,6 @@ moviepy
 SpeechRecognition
 pydub
 
-# LaTeX
-PyPDF
-
 # Utilities
 python-jose[cryptography]
 passlib[bcrypt]
@@ -49,10 +45,4 @@ supabase
 postgrest
 
 # Environment
-python-dotenv
 pydantic-settings
-
-# Testing
-pytest
-pytest-asyncio
-httpx
