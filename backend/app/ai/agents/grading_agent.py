@@ -1,5 +1,6 @@
 from typing import List, Dict, Any, Optional
-from langchain.agents import Tool, AgentExecutor
+from langchain_classic.tools import Tool
+from langchain_classic.agents import AgentExecutor
 from langchain_classic.memory import ConversationBufferMemory
 from app.services.llm_service import LLMService
 from app.services.grading_service import GradingService

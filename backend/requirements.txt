@@ -24,7 +24,9 @@ black
 pdf2image
 
 # Video Processing
+yt-dlp
 moviepy
+SpeechRecognition
 
 # Utilities
 python-jose[cryptography]

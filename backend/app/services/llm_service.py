@@ -1,7 +1,5 @@
 from typing import List, Dict, Any, Optional
 from langchain_groq import ChatGroq
-from langchain_huggingface import HuggingFaceEndpoint
-from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import JsonOutputParser
 from langchain_core.documents import Document
@@ -23,22 +21,6 @@ class LLMService:
             return ChatGroq(
                 api_key=settings.GROQ_API_KEY,
                 model=settings.LLM_MODEL,
-                temperature=0.3
-            )
-        elif settings.LLM_PROVIDER == "huggingface":
-            if not settings.HUGGINGFACE_API_KEY:
-                raise ValueError("HUGGINGFACE_API_KEY not configured")
-            return HuggingFaceEndpoint(
-                endpoint_url=f"https://api-inference.huggingface.co/models/{settings.LLM_MODEL}",
-                huggingfacehub_api_token=settings.HUGGINGFACE_API_KEY,
-                task="text-generation"
-            )
-        elif settings.LLM_PROVIDER == "openai":
-            if not settings.OPENAI_API_KEY:
-                raise ValueError("OPENAI_API_KEY not configured")
-            return ChatOpenAI(
-                api_key=settings.OPENAI_API_KEY,
-                model="gpt-4",
                 temperature=0.3
             )
         else:
