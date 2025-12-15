@@ -1,0 +1,62 @@
+# FastAPI & Web
+fastapi[standard]
+uvicorn[standard]
+python-multipart
+
+# Database
+sqlalchemy
+alembic
+psycopg2-binary
+asyncpg
+
+# AI/ML
+langchain
+langchain-core
+langchain-groq
+langchain-community
+langchain-huggingface
+langchain-openai
+
+# LLM Providers
+groq
+openai
+huggingface-hub
+
+# PDF Processing
+pypdf
+PyPDF2
+black
+pdf2image
+Pillow
+pytesseract
+
+# Video Processing
+yt-dlp
+moviepy
+SpeechRecognition
+pydub
+
+# LaTeX
+PyPDF
+
+# Utilities
+python-jose[cryptography]
+passlib[bcrypt]
+bcrypt
+python-magic
+wikipedia-api
+requests
+aiofiles
+
+# Supabase
+supabase
+postgrest
+
+# Environment
+python-dotenv
+pydantic-settings
+
+# Testing
+pytest
+pytest-asyncio
+httpx
