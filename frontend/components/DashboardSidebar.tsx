@@ -174,7 +174,7 @@ export function DashboardSidebar({
                 WebkitTextFillColor: "transparent",
               }}
             >
-              EduAI
+              MyClassAgent
             </Text>
           </motion.div>
         )}
