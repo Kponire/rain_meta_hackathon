@@ -126,7 +126,7 @@ export default function LecturerRegistrationPage() {
         >
           <Stack gap="xl">
             <Stack align="center" gap="xs">
-              <Title order={1} size={35}>
+              <Title order={1} size={30}>
                 Lecturer Registration
               </Title>
               <Text size="lg" c="dimmed">
@@ -147,7 +147,7 @@ export default function LecturerRegistrationPage() {
               )}
             </Stack>
 
-            <GlassCard hoverEffect={false} w={"55vw"} padding="xl">
+            <GlassCard hoverEffect={false} w={{ base: "100%", sm: "55vw" }} padding="xl">
               <Stepper
                 active={active}
                 onStepClick={setActive} /*breakpoint="sm"*/
@@ -366,7 +366,6 @@ export default function LecturerRegistrationPage() {
                 )}
                 {active < 2 && (
                   <Button
-                    style={{ paddingInline: "70px" }}
                     color="twitterBlue"
                     onClick={nextStep}
                     ml="auto"

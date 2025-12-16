@@ -79,7 +79,9 @@ export default function StudentDashboardPage() {
         apiClient.assignments.getStudentAssignments(),
       ]);
 
-      setCourses(coursesRes.data);
+      setCourses(Array.isArray(coursesRes.data.courses)
+      ? coursesRes.data.courses
+      : []);
       //setAssignments(assignmentsRes.data);
 
       setStats({

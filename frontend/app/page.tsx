@@ -251,7 +251,7 @@ export default function LandingPage() {
       >
         <Container size="lg">
           <Text size="sm" ta="center">
-            © 2024 AI Learning Platform - Hackathon Project
+            © 2025 AI Learning Platform - Hackathon Project
           </Text>
         </Container>
       </footer>

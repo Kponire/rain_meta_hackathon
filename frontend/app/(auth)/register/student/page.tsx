@@ -132,7 +132,7 @@ export default function StudentRegistrationPage() {
         >
           <Stack gap="xl">
             <Stack align="center" gap="xs">
-              <Title order={1} size={38}>
+              <Title order={1} size={30}>
                 Student Registration
               </Title>
               <Text size="lg" c="dimmed">
@@ -140,7 +140,7 @@ export default function StudentRegistrationPage() {
               </Text>
             </Stack>
 
-            <GlassCard hoverEffect={false} w={"55vw"} padding="xl">
+            <GlassCard hoverEffect={false} w={{ base: "100%", sm: "55vw" }} padding="xl">
               <Stepper active={active} onStepClick={setActive}>
                 <Stepper.Step
                   label="Personal Info"
